@@ -1,10 +1,10 @@
 import Foundation
 import RealmSwift
 
-extension Results where Element: RealmModel {
+public extension Results where Element: RealmModel {
   
   enum Operator {
-    enum Comparison: String {
+    public enum Comparison: String {
       case less = "<"
       case lessEqual = "<="
       case equal = "=="
