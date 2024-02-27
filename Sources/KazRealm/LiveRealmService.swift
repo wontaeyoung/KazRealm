@@ -3,6 +3,7 @@ import RealmSwift
 public final class LiveRealmService: RealmService {
   
   private let realm: Realm = try! Realm()
+  public init() { }
   
   // MARK: - Create
   public func create<T: RealmModel>(
